@@ -15,7 +15,7 @@ class AppTheme {
       primaryColor: AppColors.primary,
 
       colorScheme: const ColorScheme.light(
-        primary: AppColors.primary,
+        primaryContainer: AppColors.genoa550,
         secondary: AppColors.primaryDark,
         surface: AppColors.lightSurface,
         error: AppColors.error,
@@ -48,9 +48,7 @@ class AppTheme {
               AppColors.primaryDark, // As seen in Create Account screen
           foregroundColor: Colors.white,
           elevation: 0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30.0),
-          ),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
           padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 24.0),
           textStyle: const TextStyle(
             fontSize: 16.0,
@@ -106,7 +104,7 @@ class AppTheme {
       primaryColor: AppColors.primary,
 
       colorScheme: const ColorScheme.dark(
-        primary: AppColors.primary,
+        primaryContainer: AppColors.woodsmoke800,
         secondary: AppColors.primaryDark,
         surface: AppColors.darkSurface,
         error: AppColors.error,
@@ -138,9 +136,7 @@ class AppTheme {
           backgroundColor: AppColors.primaryDark,
           foregroundColor: Colors.white,
           elevation: 0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30.0),
-          ),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
           padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 24.0),
           textStyle: const TextStyle(
             fontSize: 16.0,

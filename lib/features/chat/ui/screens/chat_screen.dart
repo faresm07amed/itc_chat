@@ -384,6 +384,33 @@ class Chat2 extends StatelessWidget {
           ),
         ),
       ],
+import 'package:itc_chat/core/widgets/widgets.dart';
+import 'package:itc_chat/features/chat/ui/widgets/widgets.dart';
+
+class ChatScreen extends StatelessWidget {
+  const ChatScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      appBar: AppBar(title: const Text('Chat'), backgroundColor: Color(0x330F766E)),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Expanded(
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return MessageBubble(text: 'Hello', isUser: false);
+                },
+              ),
+            ),
+            ChatInputBar(),
+          ],
+        ),
+      ),
     );
   }
 }
